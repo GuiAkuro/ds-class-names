@@ -1,6 +1,6 @@
-# sk-css-classes README
+# ds-class-names README
 
-This is the README for your extension "sk-css-classes". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "ds-class-names". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
