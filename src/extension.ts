@@ -1,7 +1,8 @@
 import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  const TRIGGER_CHAR = '"';
+  const DOUBLE_QUOTE = '"';
+  const SINGLE_QUOTE = "'";
 
   const provider = vscode.languages.registerCompletionItemProvider(
     ["typescriptreact", "javascriptreact"],
@@ -14,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
           .lineAt(position)
           .text.slice(0, position.character);
 
-        if (!linePrefix.includes('className="')) {
+        if (!linePrefix.includes('className=')) {
           return undefined;
         }
 
@@ -131,7 +132,8 @@ export function activate(context: vscode.ExtensionContext) {
         });
       },
     },
-    TRIGGER_CHAR
+    DOUBLE_QUOTE, 
+    SINGLE_QUOTE
   );
 
   context.subscriptions.push(provider);

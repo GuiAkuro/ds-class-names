@@ -2,7 +2,8 @@
   "name": "ds-class-names",
   "displayName": "ds-class-names",
   "description": "ds-class-names",
-  "version": "0.0.1",
+  "publisher": "guilherme",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.91.0"
   },
